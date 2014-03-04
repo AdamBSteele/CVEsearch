@@ -1,12 +1,12 @@
-     ----------------    Python CVE Searcher    ----------------
-  Downloads and searches through the National Vulnerability Database
+#  Python CVE Searcher
+**Downloads and searches through the National Vulnerability Database**
+======
 
-  ./CVEsearch.py <name> [options]
+### ./CVEsearch.py <name> [options]
 
+##positional argument:
 
-positional argument:
-
- | name | Name of software you are researching |
+**<NAME>** = Name of software you are researching 
 
 Optional Arguments:
 
