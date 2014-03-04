@@ -24,7 +24,7 @@ def downloadDatabaseFiles(startYear):
 		if os.path.isfile( destFileName ):
 			continue
 
-		print("Downloading database for year " + str(startYear))
+		print("Downloading database for year " + str(x))
 		dbUrl = "http://static.nvd.nist.gov/feeds/xml/cve/nvdcve-2.0-" + str(x) + ".xml"
 		destFileName = str(x) + "_CVEs.xml"
 		dbFile = urlretrieve(dbUrl, destFileName, reporthook=dlProgress)
@@ -69,6 +69,7 @@ def searchThrough(CVE):
 
 if len(sys.argv) == 1:
 	print(usage)
+	print("Use '-h' flag for help")
 	exit(0)
 
 args = sys.argv[1:]
