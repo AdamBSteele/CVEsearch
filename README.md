@@ -4,9 +4,9 @@
   ./CVEsearch.py <name> [options]
 
 
-positional arguments:
+positional argument:
 
-  name                  Name of software you are researching
+ | name | Name of software you are researching |
 
 Optional Arguments:
 
