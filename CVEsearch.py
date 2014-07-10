@@ -6,6 +6,7 @@ from urllib.request import urlretrieve
 import argparse
 
 SOFTWARELIST = "{http://scap.nist.gov/schema/vulnerability/0.4}vulnerable-software-list"
+BASIC_ATTRIBUTES = "{http://scap.nist.gov/schema/vulnerability/0.4}cvss"
 
 usage = """
      ---------   Python CVE Searcher    --------
@@ -131,8 +132,7 @@ def searchThrough(CVE, args):
         return
 
     # Is the score high enough?
-    basic_attributes = "{http://scap.nist.gov/schema/vulnerability/0.4}cvss"
-    ba = CVE.find(basic_attributes)
+    ba = CVE.find(BASIC_ATTRIBUTES)
     score = float(ba[0][0].text)
     if score < args.severity:
         return
