@@ -1,7 +1,8 @@
 #  Python CVE Searcher
 
-####Downloads and searches through the National Vulnerability Database
+Downloads and searches through the National Vulnerability Database
 ======
+
 **USAGE:
       ./CVEsearch.py name_of_software [options]**
 
